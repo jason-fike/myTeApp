@@ -1,0 +1,14 @@
+#weeks-nav li{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 span {
+    float: right;
+}
+
+.playerRow div {
+    display: inline;
+}

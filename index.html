@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- My CSS File -->
+    <link rel="stylesheet" href="style.css">   
+</head>
+<header>
+    <h1>My App <span id="login">Login</span></h1>
+    <nav id="weeks-nav" class="container-fluid">
+        <ul>
+            <li id="weeks-label">Weeks</li>
+            <li id="week1" class="weeks">1</li>
+            <li id="week2" class="weeks">2</li>
+            <li id="week3" class="weeks">3</li>
+            <li id="week4" class="weeks">4</li>
+            <li id="week5" class="weeks">5</li>
+            <li id="week6" class="weeks">6</li>
+            <li id="week7" class="weeks">7</li>
+            <li id="week8" class="weeks">8</li>
+            <li id="week9" class="weeks">9</li>
+            <li id="week10" class="weeks">10</li>
+            <li id="week11" class="weeks">11</li>
+            <li id="week12" class="weeks">12</li>
+            <li id="week13" class="weeks">13</li>
+            <li id="week14" class="weeks">14</li>
+            <li id="week15" class="weeks">15</li>
+            <li id="week16" class="weeks">16</li>
+            <li id="favPlayersButton">Players</li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div id="userPopUp" class="loader hidden">
+        <a href="#" class="closePopUp">X</a>
+        <div class="container">
+          <h1>Login</h1>
+          <div class="container">
+            <label><b>User Info</b></label>
+            <input id="initialUsername" type="text" placeholder="Enter Username" name="uname">
+            <input id="initialFirstName" type="text" placeholder="Enter First Name" name="firstname">
+            <input id="initialFavTeam" type="text" placeholder="Enter Favorite Team" name="favteam">
+            <button id="createUser" type="submit">Login</button>
+          </div>          
+        </div>
+    </div>
+    <div id="favPlayerPopUp" class="hidden">
+        <a href="#" class="closePopUp">X</a>
+        <div class="container">
+            <h1>Favorite Players</h1>
+            <label><b>User Info</b></label>
+            <input id="currentUsername" type="text" placeholder="Username" name="uname">
+            <input id="currentFirstName" type="text" placeholder="First Name" name="firstname">
+            <input id="currentFavTeam" type="text" placeholder="Favorite Team" name="favteam">
+            <button id="updateUser" type="submit">Update</button>   
+            <button id="deleteUser" type="submit">Delete</button> 
+        </div>
+        <div></div>
+            <ul id="favPlayers"></ul>
+    </div>
+    <section id="main" class="container">
+        <div data-id="playerName" class="row playerRow">
+            <div class="col-md-2">Picture</div>
+            <div class="col-md-2 player">Name</div>
+            <div class="col-md-2">Team</div>
+            <div class="col-md-1">Targets</div>
+            <div class="col-md-1">Catches</div>
+            <div class="col-md-1">Yards</div>
+            <div class="col-md-1">TDs</div>
+            <div class="col-md-1">Fantasy Points</div>
+            <div class="col-md-1 star">Star</div>
+        </div>
+    </section>
+  
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
